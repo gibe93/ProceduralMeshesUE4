@@ -1,0 +1,16 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Distributing 3 actions to XGE
+  --------------------Project: Default-------------------------------------------
+  ProceduralMeshActor.cpp (0:01.31 at +0:00)
+  UE4Editor-ProceduralMeshes.lib (0:00.12 at +0:01)
+     Creating library C:\Stuff\ProceduralMehses\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.lib and object C:\Stuff\ProceduralMehses\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.exp
+  UE4Editor-ProceduralMeshes.dll (0:00.89 at +0:01)
+     Creating library C:\Stuff\ProceduralMehses\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.suppressed.lib and object C:\Stuff\ProceduralMehses\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.suppressed.exp
+  ---------------------- Done ----------------------
+   
+      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+   
+  
+  
+  Deploying ProceduralMeshesEditor Win64 Development...
+  Total build time: 3.72 seconds (XGE executor: 2.44 seconds)
