@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProceduralMeshActor); \
 
 
 #define ProceduralMeshes_Source_ProceduralMeshes_ProceduralMeshActor_h_25_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ProceduralMesh() { return STRUCT_OFFSET(AProceduralMeshActor, ProceduralMesh); }
+	FORCEINLINE static uint32 __PPO__ProceduralMesh() { return STRUCT_OFFSET(AProceduralMeshActor, ProceduralMesh); } \
+	FORCEINLINE static uint32 __PPO__SelectedVertexEffect() { return STRUCT_OFFSET(AProceduralMeshActor, SelectedVertexEffect); }
 
 
 #define ProceduralMeshes_Source_ProceduralMeshes_ProceduralMeshActor_h_22_PROLOG

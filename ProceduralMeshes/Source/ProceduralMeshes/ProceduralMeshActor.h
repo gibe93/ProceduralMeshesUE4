@@ -33,7 +33,12 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-		class UProceduralMeshComponent* ProceduralMesh;
+	class UProceduralMeshComponent* ProceduralMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	class  UParticleSystemComponent* SelectedVertexEffect;
+
+	FVector* SelectedVertex;
 
 	/* Vertices needed to generate a procedural cube mesh */
 	FVector LowerBackLeft;
@@ -64,6 +69,10 @@ protected:
 public:
 
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	
+	float m_fAccumulator;
 	
 	
 };

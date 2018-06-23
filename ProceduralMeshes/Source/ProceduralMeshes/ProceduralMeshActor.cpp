@@ -1,19 +1,24 @@
 #include "ProceduralMeshActor.h"
 #include "ProceduralMeshComponent.h"
+#include "Runtime/Engine/Classes/Particles/ParticleSystemComponent.h"
 #include "GameFramework/Actor.h"
 
 AProceduralMeshActor::AProceduralMeshActor()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
+	m_fAccumulator = 0.0f;
 	ProceduralMesh = CreateDefaultSubobject<UProceduralMeshComponent>("ProceduralMesh");
+	SelectedVertex = nullptr;
+	SelectedVertexEffect = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("SelectedVertexEffect"));
 	SetRootComponent(ProceduralMesh);
+	SelectedVertexEffect->AttachTo(ProceduralMesh);
 	ProceduralMesh->bUseAsyncCooking = true;
 }
 
 void AProceduralMeshActor::BeginPlay()
 {
 	Super::BeginPlay();
+	SelectedVertexEffect->SetVisibility(false);
 	GenerateProceduralMesh();
 }
 
@@ -92,14 +97,54 @@ void AProceduralMeshActor::GenerateProceduralMesh()
 void AProceduralMeshActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if(GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::O))
+
+
+	if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Zero))
 	{
-		for(FVector* V : FaceLeft.Vertices)
-		{
-			V->Y -= 10 * DeltaTime;
-		}
-		ProceduralMesh->UpdateMeshSection(0, Vertices, TArray<FVector>(), TArray<FVector2D>(), TArray<FColor>(), TArray<FProcMeshTangent>());
-	
+		SelectedVertex = &Vertices[0];
 	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::One))
+	{
+		SelectedVertex = &Vertices[1];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Two))
+	{
+		SelectedVertex = &Vertices[2];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Three))
+	{
+		SelectedVertex = &Vertices[3];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Four))
+	{
+		SelectedVertex = &Vertices[4];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Five))
+	{
+		SelectedVertex = &Vertices[5];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Six))
+	{
+		SelectedVertex = &Vertices[6];
+	}
+	else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::Seven))
+	{
+		SelectedVertex = &Vertices[7];
+	}
+	if (SelectedVertex != nullptr)
+	{
+		if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::I)) SelectedVertex->Z += 20 * DeltaTime;
+		else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::K)) SelectedVertex->Z -= 20 * DeltaTime;
+		else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::L)) SelectedVertex->Y += 20 * DeltaTime;
+		else if (GetWorld()->GetFirstPlayerController()->IsInputKeyDown(EKeys::J)) SelectedVertex->Y -= 20 * DeltaTime;
+
+		SelectedVertexEffect->SetVisibility(true);
+		SelectedVertexEffect->SetRelativeLocation(*SelectedVertex);
+	}
+	m_fAccumulator += DeltaTime;
+
+	ProceduralMesh->UpdateMeshSection(0, Vertices, TArray<FVector>(), TArray<FVector2D>(), TArray<FColor>(), TArray<FProcMeshTangent>());
+
+	//}
 }
 

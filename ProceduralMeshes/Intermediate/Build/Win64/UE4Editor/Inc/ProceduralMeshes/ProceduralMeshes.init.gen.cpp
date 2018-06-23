@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeProceduralMeshes_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ProceduralMeshes",
 				PKG_CompiledIn | 0x00000000,
-				0x92EA47F2,
-				0x2FA5958B,
+				0x3E387B18,
+				0x6C1F486C,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

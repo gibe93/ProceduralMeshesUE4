@@ -1,52 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\ProceduralMeshes.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{D0262BBA-6415-42D2-B013-222C8F88AABE}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\ProceduralMeshes.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\ProceduralMeshesEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{6A48D6EA-8429-4A15-9CCE-C5F181C3221D}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\ProceduralMeshes">
-			<UniqueIdentifier>{8B1DACED-4DB6-4B67-B3BA-155EEF2B7964}</UniqueIdentifier>
-		</Filter>
-		<ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshActor.cpp">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshActor.h">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.Build.cs">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.cpp">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.h">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshesGameModeBase.cpp">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshesGameModeBase.h">
-			<Filter>Source\ProceduralMeshes</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ProceduralMeshes.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{7886F5D7-F306-4A2C-9FA8-051DD08A9E58}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ProceduralMeshes.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ProceduralMeshesEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0EAB5F3E-F92F-4005-9F1C-8EBE1115F8AC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ProceduralMeshes">
+      <UniqueIdentifier>{080FB26B-8E69-4F64-AAB4-B4FED9847F08}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshActor.cpp">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshActor.h">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.Build.cs">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.cpp">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshes.h">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ProceduralMeshes\ProceduralMeshesGameModeBase.cpp">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProceduralMeshes\ProceduralMeshesGameModeBase.h">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ProceduralMeshes\MyDefaultPawn.h">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\ProceduralMeshes\MyDefaultPawn.cpp">
+      <Filter>Source\ProceduralMeshes</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
