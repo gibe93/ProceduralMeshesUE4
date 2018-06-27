@@ -1,16 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Parsing headers for ProceduralMeshesEditor
-    Running UnrealHeaderTool "D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\ProceduralMeshes.uproject" "D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\ProceduralMeshesEditor\Development\ProceduralMeshesEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for ProceduralMeshesEditor in 6.0975297 seconds
-  Performing 5 actions (9 in parallel)
-  MyDefaultPawn.cpp
-  MyDefaultPawn.gen.cpp
-  ProceduralMeshActor.cpp
-D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Source\ProceduralMeshes\ProceduralMeshActor.cpp(14): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  C:\UE_4.19.1\UE_4.19\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(641): note: see declaration of 'USceneComponent::AttachTo'
-  [4/5] Link UE4Editor-ProceduralMeshes.dll
-  [5/5] Link UE4Editor-ProceduralMeshes.lib
-     Creating library D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.lib and object D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.exp
-     Creating library D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.suppressed.lib and object D:\depot\UE4\ProceduralMeshes\ProceduralMeshesUE4\ProceduralMeshes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ProceduralMeshes.suppressed.exp
+  Target is up to date
   Deploying ProceduralMeshesEditor Win64 Development...
-  Total build time: 8.37 seconds (Local executor: 1.42 seconds)
+  Total build time: 1.22 seconds (NoActionsToExecute executor: 0.00 seconds)
